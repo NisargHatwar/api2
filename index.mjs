@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/api", (req, res) => {
+  console.log("Post request received")
   console.log(req.body);
   res.send("Received data successfully!");
 });
